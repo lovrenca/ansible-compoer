@@ -1,0 +1,8 @@
+---
+- name: Get composer
+  get_url:
+    url: "{{ composer_url }}"
+    dest: "{{ composer_install_path }}"
+    mode: 0755
+    group: root
+    owner: root
